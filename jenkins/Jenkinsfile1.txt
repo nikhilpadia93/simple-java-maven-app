@@ -19,6 +19,11 @@ pipeline {
 			always{
 				junit 'C:\Users\Quality\blueoceantest\Simple-java-maven-app\target\surefire-reports\*.xml
 			}
-			
+		}	
+		stage('Deliver')
+			steps{
+				sh './jenkins/scripts/deliver.sh'
+			}
+		}
     }
 }
