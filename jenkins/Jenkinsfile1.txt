@@ -17,7 +17,7 @@ pipeline {
 		}
 		post{
 			always{
-				junit 'target/surefire-reports/*.xml
+				junit 'C:\Users\Quality\blueoceantest\Simple-java-maven-app\target\surefire-reports\*.xml
 			}
 			
     }
